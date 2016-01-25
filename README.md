@@ -1,6 +1,6 @@
 # intropolis
 
-`intropolis` is a list of exon-exon junctions found across 21,504 human RNA-seq samples on the [Sequence Read Archive](http://www.ncbi.nlm.nih.gov/sra) from spliced read alignments to `hg19` with [Rail-RNA](http://rail.bio). Two files are provided:
+`intropolis` is a list of exon-exon junctions found across 21,504 human RNA-seq samples on the [Sequence Read Archive](http://www.ncbi.nlm.nih.gov/sra) (SRA) from spliced read alignments to *hg19* with [Rail-RNA](http://rail.bio). Two files are provided:
 
 A. ftp://ftp.toinsert.com/intropolis.v1.hg19.tsv.gz : a gzipped TSV with fields
   1. chromosome
@@ -19,7 +19,7 @@ B. ftp://ftp.toinsert.com/intropolis.idmap.v1.hg19.tsv : a TSV with fields
   4. SRA experiment accession number
   5. SRA run accession number
 
-If you use `intropolis`, cite [*Human splicing diversity across the Sequence Read Archive*](http://bioarxiv.org/), by
+Expect new versions spanning more samples as they are added to SRA. If you use `intropolis`, cite [*Human splicing diversity across the Sequence Read Archive*](http://bioarxiv.org/), by
 
 * [Abhi Nellore](http://nellore.github.io)
 * [Jean-Philippe Fortin](http://jfortinbiostats.com/)
