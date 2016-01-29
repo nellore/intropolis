@@ -28,7 +28,7 @@ Expect new versions spanning more samples as they are added to SRA. If you use `
 * Siruo Wang
 * Robert A. Phillips III
 * Nishika Karbhari
-* [Kasper D. Hansen](http://www.hansenlab.org/)
 * [Andrew E. Jaffe](http://www.aejaffe.com/)
+* [Kasper D. Hansen](http://www.hansenlab.org/)
 * [Ben Langmead](http://www.langmead-lab.org/)
 * [Jeffrey T. Leek](http://jtleek.com/)
