@@ -19,7 +19,7 @@ B. <a href="http://bit.ly/1PmKdpD" download>intropolis.idmap.v1.hg19.tsv</a> : a
   4. SRA experiment accession number
   5. SRA run accession number
 
-Metadata on SRA specifying e.g. tissue and cell type is incomplete does not have a controlled vocabulary. Some is available in [this file](http://verve.webfactional.com/misc/all_illumina_sra_for_human.tsv.gz) derived from the fantastic [`SRAdb` R package](https://bioconductor.org/packages/release/bioc/html/SRAdb.html) by Jack Zhu and Sean Davis. Still more metadata taken from [Biosample](http://www.ncbi.nlm.nih.gov/biosample/) is available in [this file](https://raw.githubusercontent.com/nellore/runs/master/sra/hg19/biosample_tags.tsv).
+Metadata on SRA specifying e.g. tissue and cell type is incomplete and does not have a controlled vocabulary. Some is available in [this file](http://verve.webfactional.com/misc/all_illumina_sra_for_human.tsv.gz) derived from the fantastic [`SRAdb` R package](https://bioconductor.org/packages/release/bioc/html/SRAdb.html) by Jack Zhu and Sean Davis. Still more metadata taken from [Biosample](http://www.ncbi.nlm.nih.gov/biosample/) is available in [this file](https://raw.githubusercontent.com/nellore/runs/master/sra/hg19/biosample_tags.tsv).
 
 Expect new versions of `intropolis` spanning more samples as they are added to SRA. If you use `intropolis`, cite [*Human splicing diversity across the Sequence Read Archive*](http://biorxiv.org/content/early/2016/01/29/038224), by
 
