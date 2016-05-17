@@ -5,7 +5,7 @@
 A. [intropolis.v1.hg19.tsv.gz](http://bit.ly/1SfBRTi) : a 6.6-GB gzipped TSV (18.3 GB uncompressed) with fields
   1. chromosome
   2. intron start position (1-based; inclusive)
-  3. intron end position (1-based; exclusive)
+  3. intron end position (1-based; inclusive)
   4. strand (+ or -)
   5. donor dinucleotide (e.g., GT)
   6. acceptor dinucleotide (e.g., AG)
