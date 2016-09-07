@@ -1,6 +1,6 @@
 # intropolis
 
-`intropolis` is a list of exon-exon junctions found across 21,504 human RNA-seq samples on the [Sequence Read Archive](http://www.ncbi.nlm.nih.gov/sra) (SRA) from spliced read alignment to *hg19* with [Rail-RNA](http://rail.bio). Two files are provided:
+`intropolis` is a list of exon-exon junctions found across 21,504 human RNA-seq samples on the [Sequence Read Archive](http://www.ncbi.nlm.nih.gov/sra) (SRA) from spliced read alignment to *hg19* with [Rail-RNA](http://rail.bio). Five files are provided:
 
 A. [intropolis.v1.hg19.tsv.gz](http://bit.ly/1SfBRTi) : a 6.6-GB gzipped TSV (18.3 GB uncompressed) with fields
   1. chromosome
@@ -18,6 +18,32 @@ B. <a href="http://bit.ly/1PmKdpD" download>intropolis.idmap.v1.hg19.tsv</a> : a
   3. SRA sample accession number
   4. SRA experiment accession number
   5. SRA run accession number
+
+C. <a href="http://bit.ly/2cmNHKB" download>intropolis.v1.hg19.bed.gz</a> : a gzipped BED-formatted version of `intropolis.v1.hg19.tsv.gz` with fields
+  1. chromosome
+  2. intron start position (0-based; inclusive)
+  3. intron end position (0-based; exclusive)
+  4. name (`junction_[line number]`)
+  5. score (always `1000`)
+  6. strand (+ or -)
+
+D. <a href="http://bit.ly/2craEez" download>intropolis.v1.hg19.bb</a> : a bigBed version of `intropolis.v1.hg19.bed.gz`
+
+E. [intropolis.v1.hg19_with_liftover_to_hg38.tsv.gz](http://bit.ly/2cEUnHJ) : a 7-GB gzipped TSV (18.3 GB uncompressed) with fields
+  1. chromosome
+  2. intron start position (1-based; inclusive)
+  3. intron end position (1-based; inclusive)
+  4. strand (+ or -)
+  5. donor dinucleotide (e.g., GT)
+  6. acceptor dinucleotide (e.g., AG)
+  7. comma-separated list of indexes of samples in which junction was found
+  8. comma-separated list of corresponding numbers of reads mapping across junction in samples from field 7
+  9. chromosome from liftover to hg38 or NA if unavailable
+  10. start position in liftover to hg38 or NA if unavailable
+  11. end position in liftover to hg38 or NA if unavailable
+  12. strand in liftover to hg38 or NA if unavailable
+
+Liftover of junctions to hg38 in `intropolis.v1.hg19_with_liftover_to_hg38.tsv.gz` was performed with the UCSC [`liftOver` executable](https://genome-store.ucsc.edu/) with command-line parameters `-ends=2 -minMatch=1.0` and may be reproduced using [this script]( https://github.com/nellore/runs/blob/master/sra/liftover_intropolis.py) together with `intropolis.v1.hg19.tsv.gz`.
 
 Metadata on SRA specifying e.g. tissue and cell type is incomplete and does not have a controlled vocabulary. Some is available in [this file](http://verve.webfactional.com/misc/all_illumina_sra_for_human.tsv.gz) derived from the fantastic [`SRAdb` R package](https://bioconductor.org/packages/release/bioc/html/SRAdb.html) by [Jack Zhu](https://support.bioconductor.org/u/3338/) and [Sean Davis](http://watson.nci.nih.gov/~sdavis/). Still more metadata taken from [Biosample](http://www.ncbi.nlm.nih.gov/biosample/) is available in [this file](https://raw.githubusercontent.com/nellore/runs/master/sra/hg19/biosample_tags.tsv). But probably the best effort to infer metadata for SRA RNA-seq (with a controlled vocabulary for tissues!) is [SHARQ](http://sharq.compbio.cs.cmu.edu/), by [Darya Filippova](http://www.cs.cmu.edu/~dfilippo/) while in [Carl Kingsford](http://www.cs.cmu.edu/~ckingsf/)'s group.
 
