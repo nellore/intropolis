@@ -29,7 +29,7 @@ C. <a href="http://bit.ly/2cmNHKB" download>intropolis.v1.hg19.bed.gz</a> : a gz
 
 D. <a href="http://bit.ly/2craEez" download>intropolis.v1.hg19.bb</a> : a bigBed version of `intropolis.v1.hg19.bed.gz`
 
-E. [intropolis.v1.hg19_with_liftover_to_hg38.tsv.gz](http://bit.ly/2cEUnHJ) : a 7-GB gzipped TSV (18.3 GB uncompressed) with fields
+E. [intropolis.v1.hg19_with_liftover_to_hg38.tsv.gz](http://bit.ly/2cEUnHJ) : a 6.87-GB gzipped TSV (18.3 GB uncompressed) with fields
   1. chromosome
   2. intron start position (1-based; inclusive)
   3. intron end position (1-based; inclusive)
