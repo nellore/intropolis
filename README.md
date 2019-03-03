@@ -1,5 +1,7 @@
 # intropolis
 
+PLEASE NOTE: [Snaptron](https://academic.oup.com/bioinformatics/article/34/1/114/4101942) by [Wilks et al.](https://academic.oup.com/bioinformatics/article/34/1/114/4101942) is a query tool for making sense of splicing across thousands of RNA-seq samples. It subsumes intropolis v1. If you are looking for the raw data behind Snaptron, see http://snaptron.cs.jhu.edu/data/. In particular, the SQLite files comprising an "intropolis v2" compilation spanning ~50,000 RNA-seq samples on SRA are available at http://snaptron.cs.jhu.edu/data/srav2/.
+
 `intropolis` is a list of exon-exon junctions found across 21,504 human RNA-seq samples on the [Sequence Read Archive](http://www.ncbi.nlm.nih.gov/sra) (SRA) from spliced read alignment to *hg19* with [Rail-RNA](http://rail.bio). Five files are provided:
 
 A. [intropolis.v1.hg19.tsv.gz](http://bit.ly/1SfBRTi) : a 6.6-GB gzipped TSV (18.3 GB uncompressed) with fields
