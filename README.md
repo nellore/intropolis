@@ -45,6 +45,8 @@ E. [intropolis.v1.hg19_with_liftover_to_hg38.tsv.gz](http://bit.ly/2cEUnHJ) : a 
   11. end position in liftover to hg38 or NA if unavailable
   12. strand in liftover to hg38 or NA if unavailable
 
+(If the links above don't work for you, check out the [backup on Figshare](https://figshare.com/articles/dataset/intropolis_exon-exon_junctions_across_publicly_available_RNA-seq_samples_on_the_Sequence_Read_Archive/3811680/1).)
+
 Liftover of junctions to hg38 in `intropolis.v1.hg19_with_liftover_to_hg38.tsv.gz` was performed with the UCSC [`liftOver` executable](https://genome-store.ucsc.edu/) with command-line parameters `-ends=2 -minMatch=1.0` and may be reproduced using [this script]( https://github.com/nellore/runs/blob/master/sra/liftover_intropolis.py) together with `intropolis.v1.hg19.tsv.gz`.
 
 Metadata on SRA specifying e.g. tissue and cell type is incomplete and does not have a controlled vocabulary. Some is available in [this file](http://verve.webfactional.com/misc/all_illumina_sra_for_human.tsv.gz) derived from the fantastic [`SRAdb` R package](https://bioconductor.org/packages/release/bioc/html/SRAdb.html) by [Jack Zhu](https://support.bioconductor.org/u/3338/) and [Sean Davis](http://watson.nci.nih.gov/~sdavis/). Still more metadata taken from [Biosample](http://www.ncbi.nlm.nih.gov/biosample/) is available in [this file](https://raw.githubusercontent.com/nellore/runs/master/sra/hg19/biosample_tags.tsv). But probably the best effort to infer metadata for SRA RNA-seq (with a controlled vocabulary for tissues!) is [SHARQ](http://sharq.compbio.cs.cmu.edu/), by [Darya Filippova](http://www.cs.cmu.edu/~dfilippo/) while in [Carl Kingsford](http://www.cs.cmu.edu/~ckingsf/)'s group.
